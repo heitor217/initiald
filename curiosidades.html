@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades - Initial D</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <style>
+        body {
+            background-color: #121212; 
+            color: #e0e0e0; 
+        }
+
+        p {
+            text-align: justify;
+        }
+        
+        .meu-header {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .meu-header img {
+            width: 50%;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .caixa-historinha {
+            background-color: rgba(33, 37, 41, 0.85);
+            color: #ffffff;
+            border-radius: 8px;
+        }
+
+        .imagem-lateral {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .banner-central-flutuante {
+            width: 100%;
+            height: 450px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #212529;
+        }
+
+        .banner-central-flutuante img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .caixa-flutuante-meio {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.75);
+            border: 2px solid rgba(255, 255, 255, 0.75);
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            width: 85%;
+            max-width: 600px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 0.95rem;
+            }
+            .banner-central-flutuante {
+                height: auto; 
+                min-height: 420px;
+            }
+            .banner-central-flutuante img {
+                height: 420px;
+            }
+            .caixa-flutuante-meio {
+                width: 92%; 
+                padding: 15px; 
+            }
+            .caixa-flutuante-meio h3 {
+                font-size: 1.15rem; 
+                margin-bottom: 10px;
+            }
+            .caixa-flutuante-meio p {
+                font-size: 0.85rem; 
+                line-height: 1.45;
+            }
+            .caixa-historinha {
+                padding: 1.25rem;
+            }
+            .caixa-historinha p {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            .caixa-historinha h3 {
+                font-size: 1.2rem;
+            }
+            .imagem-lateral {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container my-4">
+        <div class="meu-header d-flex align-items-center justify-content-between px-4 shadow">
+            
+            <a href="index.html">
+                <img src="imagens/initial d header corrigido.jpg" alt="Logo Initial D" class="img-fluid">
+            </a>
+
+            <div>
+                <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuEscondido" aria-controls="menuEscondido">
+                    ☰ Menu
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menuEscondido" aria-labelledby="menuEscondidoLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="menuEscondidoLabel"><strong>NAVEGAÇÃO</strong></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-secondary text-start"><em>Escolha uma das páginas abaixo</em></p>
+            
+            <ul class="nav flex-column fs-5">
+                <li class="nav-item mb-2">
+                    <a href="index.html" class="nav-link text-light">Página Inicial</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="curiosidades.html" class="nav-link text-light">Curiosidades</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="personagens.html" class="nav-link text-light">Personagens e seus carros</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4 text-white">Initial D e suas curiosidades</h2>
+        
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="caixa-historinha p-4 shadow">
+                    <h3 class="mb-3">O anime utilizou marcas reais de montadoras</h3>
+                    <p class="mb-0">
+                        Uma das maiores marcas registradas de Initial D é o nível de fidelidade mecânica e técnica que o autor Shuichi Shigeno aplicou na obra. 
+                        Diferente de muitos animes onde os carros são genéricos ou fictícios, em Initial D todos os veículos — desde o modesto AE86 de Takumi até o RX-7 de Keisuke ou o GT-R de Nakazato — 
+                        possuem especificações exatas, tração real e comportamento de dirigibilidade fiéis aos modelos fabricados pelas montadoras japonesas nos anos 90.<br><br>
+                        Além de popularizar mundialmente a cultura JDM (Japanese Domestic Market) e as manobras de drift em estradas de montanha, o anime transformou o Corolla AE86 
+                        em um verdadeiro ícone pop automotivo, fazendo com que o preço de carros usados desse modelo disparasse no mundo inteiro após o sucesso da série.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <img src="imagens/ae86 curiosidade.webp" alt="Curiosidade Initial D" class="imagem-lateral shadow">
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="banner-central-flutuante shadow">
+                    <img src="imagens/balada no japão.jpg" alt="Destaque Curiosidades">
+                    
+                    <div class="caixa-flutuante-meio text-center shadow">
+                        <h3 class="mb-3">O boom do Eurobeat após o anime</h3>
+                        <p class="mb-0">
+                            Initial D foi o responsável por salvar, transformar e imortalizar o Eurobeat globalmente. Antes do anime estrear em 1998, o gênero já dava sinais de desgaste no 
+                            Japão. Ao colocar o Eurobeat como trilha sonora das batalhas de carro, a gravadora Avex apresentou o ritmo a milhões de jovens fãs de anime e entusiastas 
+                            automotivos que nunca tinham pisado em uma pista de dança. As vendas das coletâneas Super Eurobeat dispararam novamente, ganhando edições temáticas exclusivas 
+                            de Initial D e garantindo a sobrevida comercial dos estúdios produtores na Itália por mais duas décadas.<br><br>
+                            Separamos dois exemplos de músicas ao estilo Eurobeat que descrevem bem a inserção deste estilo no anime, você pode conferir logo abaixo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="caixa-historinha p-3 shadow">
+                    <h4 class="text-center mb-3 text-white">Deja Vu, um dos eurobeat mais famosos</h4>
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6CRtIYDga4VKW5sV5rfAL3?utm_source=generator&si=48b503640cbd42db" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="caixa-historinha p-3 shadow">
+                    <h4 class="text-center mb-3 text-white">Rage your dream, música marcante no anime</h4>
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4n54JaXMZLwJ3qUPnLh8TC?utm_source=generator&si=ce53254d4d374958" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="imagens/mako e sayuki.png" alt="Monte Akina Real" class="imagem-lateral shadow">
+            </div>
+
+            <div class="col-md-6">
+                <div class="caixa-historinha p-4 shadow">
+                    <h3 class="mb-3">O espaço feminino no anime</h3>
+                    <p class="mb-0">
+                        No anime, conhecemos ao decorrer das temporadas, Mako Sato e Sayuki que formam uma das duplas mais marcantes e queridas de Initial D, conhecidas nas estradas de Gunma 
+                        pelo codinome Impact Blue e pilotando um icônico Nissan Sil80 azul-metálico.<br>Elas quebram totalmente o padrão das equipes da série por serem a única dupla principal 
+                        composta por duas mulheres e por demonstrarem uma dinâmica de equipe impecável, quebrando assim um tabu nos anos 90 sobre as mulheres no meio automotivo.
+                        Curiosidade sobre elas é que posteriormente, o criador do anime Shigeno, fez um filme canônico contando exclusivamente sobre a dupla da Impact Blue.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="imagens/mf-ghost-kanata.jpg" alt="Motor 4A-GE" class="imagem-lateral shadow">
+            </div>
+
+            <div class="col-md-6">
+                <div class="caixa-historinha p-4 shadow">
+                    <h3 class="mb-3">O que acontece com Takumi após o anime?</h3>
+                    <p class="mb-0">
+                        A notícia é boa! Takumi continua em MF Ghost, na continuação oficial escrita por Shuichi Shigeno (MF Ghost, ambientada nos anos 2020), é revelado o destino adulto de 
+                        Takumi que após os acontecimentos de Initial D, ele foi para o Reino Unido competir profissionalmente no Campeonato Britânico de Rally, onde se tornou campeão. 
+                        No entanto, pouco antes de estrear no Mundial de Rally (WRC), sofreu um grave acidente durante um teste por falha mecânica, encerrando precocemente sua carreira nas 
+                        pistas e passando a atuar como instrutor de pilotagem na prestigiosa escola de corrida Royal Donington Park Racing School (onde treinou o protagonista de MF Ghost, Kanata Livington).<br>
+                        Na foto a esquerda, Kanata Kataguiri, protagonista de MF Ghost e discípulo de Takumi.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="caixa-historinha p-4 shadow">
+                    <h3 class="mb-3">A Trilha Sonora Marcante</h3>
+                    <p class="mb-0">
+                        Se você quiser mergulhar ainda mais de cabeça na atmosfera eletrizante das corridas de montanha, nada melhor do que ouvir os clássicos que embalaram cada drift de Takumi.
+                        Preparamos uma seleção especial com as melhores faixas de Eurobeat que marcaram época. 
+                        Basta dar o play na playlist ao lado para sentir a adrenalina e curtir o som enquanto navega pelo site!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7p1LpBuLf9PmgSBUETVVp3?utm_source=generator&theme=0&si=99725257fdc54390" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+        </div>
+
+         <div class="row mb-4">
+            <div class="col-12">
+                <div class="caixa-historinha text-center p-5 shadow">
+                    <h4 class="text-white mb-3">Obrigado(a) por sua visita ao site! Veja também:</h4>
+                    <div class="d-flex justify-content-center gap-3 mt-4">
+                        <a href="index.html" class="btn btn-light px-4 py-2 fw-semibold">Página Inicial</a>
+                        <a href="personagens.html" class="btn btn-light px-4 py-2 fw-semibold">Personagens e seus carros</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

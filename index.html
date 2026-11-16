@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Initial D</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #121212; 
+            color: #e0e0e0; 
+        }
+
+        p {
+            text-align: justify;
+        }
+        
+        .meu-header {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .meu-header img {
+            width: 50%;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .caixa-historinha {
+            background-color: rgba(33, 37, 41, 0.85);
+            color: #ffffff;
+            border-radius: 8px;
+        }
+
+        .secao-banner-foto {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            background-color: #212529; 
+            border-radius: 8px;
+        }
+
+        .secao-banner-foto img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover; 
+        }
+
+        .texto-sobre-foto {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.75);
+            color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 450px;
+        }
+
+        .imagem-lateral {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .imagens-lado-lado {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 0.95rem;
+            }
+            .secao-banner-foto {
+                height: auto;
+                min-height: 420px;
+            }
+            .secao-banner-foto img {
+                height: 420px;
+            }
+            .texto-sobre-foto {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                width: 92%;
+                max-width: 100%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+            .texto-sobre-foto p {
+                font-size: 0.85rem;
+                line-height: 1.45;
+            }
+            .caixa-historinha {
+                padding: 1.25rem;
+            }
+            .caixa-historinha p {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            .imagem-lateral {
+                height: 240px;
+            }
+            .imagens-lado-lado {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container my-4">
+        <div class="meu-header d-flex align-items-center justify-content-between px-4 shadow">
+            
+            <a href="index.html">
+                <img src="imagens/initial d header corrigido.jpg" alt="Logo Initial D" class="img-fluid">
+            </a>
+
+            <div>
+                <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuEscondido" aria-controls="menuEscondido">
+                    ☰ Menu
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menuEscondido" aria-labelledby="menuEscondidoLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="menuEscondidoLabel"><strong>NAVEGAÇÃO</strong></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-secondary text-start"><em>Escolha uma das páginas abaixo</em></p>
+            
+            <ul class="nav flex-column fs-5">
+                <li class="nav-item mb-2">
+                    <a href="index.html" class="nav-link text-light">Página Inicial</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="curiosidades.html" class="nav-link text-light">Curiosidades</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="personagens.html" class="nav-link text-light">Personagens e seus carros</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="container my-5">
+        
+        <h2 class="text-center mb-4 text-white">Initial D um anime de carros febre dos anos 90</h2>
+
+        <div class="caixa-historinha p-4 shadow mb-5">
+            <h3 class="mb-3">Onde tudo começou...</h3>
+            <p class="mb-0">
+                Nossa história sobre este magnífico anime começa quando conhecemos Takumi Fujiwara, 18 anos de idade e estudante cursando seu último ano de ensino médio, apático e sem o 
+                menor interesse por carros, trabalha como frentista em um posto de gasolina e recém-habilitado para dirigir carros.<br> A história começa a ficar interessante ao saber que 
+                desde os seus 13 anos de idade (sim, um menor de idade dirigindo), ele realiza entregas diárias de tofu durante a madrugada para o negócio de seu pai, chamado Bunta, este que era lendário das corridas de ruas em sua juventude, na qual he evita contar para seu 
+                filho Takumi durante a série sobre seu passado com corridas.<br><br> O carro usado por eles é um icônico Corolla Trueno (AE86), um carro de tração traseira e considerado leve para seu motor. 
+                Nas suas entregas de tofu pela cidade, seu pai colocava um copo quase transbordando de água sobre o painel do Corolla, pois assim, seria uma maneira de Takumi dirigir cautelosamente 
+                e não estragar o frágil tofu.<br>O que seu pai não sabia é que com isto, Takumi desenvolveu instintivamente técnicas avançadas de controle de peso e drift em alta velocidade, dominando cada curva da montanha 
+                na chuva ou no seco sem sequer ter noção de sua própria genialidade ao volante, um verdadeiro Ayrton Senna dos animes.<br><br>
+                O anime muda realmente de página quando os RedSuns, uma famosa equipe de corrida de rua liderada pelos irmãos Takahashi, aparecem na cidade de Takumi e desafiam a equipe local, Akina SpeedStars, da qual fazem parte os 
+                três amigos do nosso personagem principal, Itsuki, Kenji e Iketani, este último como líder da equipe.<br>
+                Iketani aceita correr contra os RedSuns pela honra e também por defender seu território, porém no dia da corrida, machucado após um acidente e sem ninguém à altura para 
+                enfrentar o prodígio Keisuke Takahashi, he se vê desesperado procurando alguém para substituí-lo, é aí então que acabam contando para Takumi, que seu pai era um gênio nos volantes e pede para que he consiga convencer seu pai
+                a ajudar eles neste desafio de corrida, porém, Bunta acaba emprestando seu Corolla (AE86) para que seu próprio filho acabe aparecendo na montanha no lugar do líder.<br><br>
+                Ao término da corrida, Takumi acaba vencendo por muito pouco, mas o suficiente para honrar o nome da equipe Akina SpeedStars de seus amigos, o que melhora ainda mais a situação é que eles
+                achavam que era o próprio pai de Takumi que estava correndo, o que é desmascarado quando Takumi abre a porta do carro e vê todos seus amigos sem acreditar no que estavam vendo, uma verdadeira cena de cinema.
+            </p>
+        </div>
+
+        <section class="secao-banner-foto shadow mb-5">
+            <img src="imagens/abaixo do header.jpg" alt="Foto de Destaque">
+            
+            <div class="texto-sobre-foto">
+                <p class="mb-0">
+                    A exibição original do anime de Initial D durou 16 anos, começando em abril de 1998 e sendo concluída em junho de 2014.<br> Em vez de ser transmitido de forma contínua 
+                    como um anime semanal tradicional, a adaptação foi dividida em temporadas espaçadas chamadas de "Stages" (Estágios), acompanhando o ritmo de publicação do mangá 
+                    original de Shuichi Shigeno e passando por diferentes estúdios de animação ao longo dos anos.
+                </p>
+            </div>
+        </section>
+
+        <div class="caixa-historinha p-4 shadow mb-5">
+            <h3 class="mb-3">O criador</h3>
+            <p class="mb-0">
+                O criador de Initial D é Shuichi Shigeno, um mangaká japonês nascido em 1958 na província de Niigata — uma região montanhosa e cheia de estradas sinuosas vizinha a Gunma, 
+                onde a história se passa. Antes de criar sua obra mais famosa em 1995, Shigeno já havia feito sucesso nos anos 1980 com Bari Bari Densetsu, um mangá focado em corridas de 
+                moto que inclusive lhe rendeu o prestigiado Prêmio de Mangá Kodansha.<br>
+                A principal inspiração para Initial D veio da própria paixão de Shigeno por carros esportivos e da cultura real dos hashiriya (corredores de rua ilegais nas estradas de 
+                montanha do Japão, chamadas de touge), que atingiu seu auge entre o final dos anos 1980 e os anos 1990. Na época, Shigeno possuía um Toyota Sprinter Trueno AE86 idêntico 
+                ao de Takumi e costumava dirigir pelas passagens de montanha reais de Gunma — como o Monte Haruna, que serviu de molde exato para o fictício Monte Akina — para mapear curvas, 
+                testar sensações de direção e desenhar os cenários com extremo realismo.<br> 
+                Para garantir que as técnicas de pilotagem, física e modificações mecânicas fossem fiéis à realidade, Shigeno contou com a consultoria técnica de Keiichi Tsuchiya, o lendário 
+                piloto profissional japonês conhecido mundialmente como o "Drift King" (Rei do Drift). Tsuchiya começou sua carreira exatamente correndo de forma clandestina nas montanhas 
+                japonesas a bordo de um AE86, e sua trajetória real ajudou a moldar tanto as manobras quanto a própria personalidade e estilo de pilotagem de Takumi Fujiwara (além de render 
+                ao piloto uma participação especial dublando a si mesmo no anime).
+            </p>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="imagens/equipes juntas na mesma foto.jpg" alt="Imagem Lateral 1" class="imagem-lateral shadow">
+            </div>
+            <div class="col-md-6">
+                <div class="caixa-historinha p-4 shadow">
+                    <h3 class="mb-3">Como eram as equipes?</h3>
+                    <p class="mb-0">
+                        Em Initial D, baseado no Japão, para cada monte com curvas perigosas existia uma equipe dominando e impondo suas regras de corridas, em espécie de territórios, nas mais
+                        vastas corridas que vemos durante toda a série, podemos ver que determinadas equipes tinham formas diferentes para realizar suas corridas.<br><br>
+                        O anime nos mostra claramente a inspiração que o criador Shigeno teve de nos mostrar as corridas touge, que na vida real, era baseado em descer um monte derrapando com os carros
+                        nas curvas fechadas que acompanhavam a descida.<br>
+                        Foi muito frequente nos anos 80 e 90 nos montes do Japão, e que era praticamente considerado uma cultura e até esporte entre os entusiastas. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="caixa-historinha p-4 shadow">
+                    <h3 class="mb-3">E como foi o anime no Brasil?</h3>
+                    <p class="mb-0">
+                        O anime estreou oficialmente por aqui em 2005, através do canal pago Animax (que exibiu o First Stage e o Second Stage totalmente dublados em português).<br>
+                        A dublagem brasileira marcou época entre os fãs, contando com nomes como Fábio Lucindo no papel de Takumi Fujiwara. O anime conquistou uma base fiel de fãs entre entusiastas de carros, 
+                        cultura JDM e drift, impulsionado também pelo enorme sucesso das máquinas de arcade Initial D Arcade Stage nos shoppings brasileiros e pelo lançamento do filme live-action de Hong Kong 
+                        (2005) em DVD no país.<br>
+                        Nos anos seguintes, sem renovação de direitos na TV ou chegada oficial completa aos streamings no Brasil, a obra acabou se mantendo viva principalmente por meio de 
+                        comunidades de fãs, fóruns automotivos e fansubs.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="imagens/brasil.jpg" alt="Imagem Lateral 2" class="imagem-lateral shadow">
+            </div>
+        </div>
+
+        <div class="caixa-historinha p-4 shadow mb-5">
+            <h3 class="mb-3">Gostou e quer descobrir mais?</h3>
+            <p class="mb-0">
+                Logo abaixo reunimos um conteúdo bem completo sobre todas as curiosidades em volta do Initial D, incluindo a trilha sonora.
+                Também contamos tudo sobre cada equipe, contendo os respectivos personagens e as corridas que acontecem ao longo da série, vale a pena conferir!
+            </p>
+        </div>
+
+        <div class="row mb-5">
+            
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="imagens/curiosidades.jpeg" alt="Curiosidades" class="imagens-lado-lado shadow mb-3">
+                <h3 class="text-white">Curiosidades</h3>
+                <p class="text-light">
+                    Descubra fatos marcantes, histórias de bastidores e detalhes surpreendentes que fizeram parte de toda a trajetória do anime!
+                </p>
+                <a href="curiosidades.html" class="btn btn-light mt-2">Saiba mais</a>
+            </div>
+
+            <div class="col-md-6">
+                <img src="imagens/civic do shingo night kids.jpg" alt="Personagens" class="imagens-lado-lado shadow mb-3">
+                <h3 class="text-white">Personagens e seus carros</h3>
+                <p class="text-light">
+                    Conheça em detalhes cada um dos integrantes, as mentes criativas por trás das equipes e os possantes de cada personagem!
+                </p>
+                <a href="personagens.html" class="btn btn-light mt-2">Saiba mais</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
